@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BoxGridLayout">
+        <attr name="separatorWidth" format="dimension" />
+        <attr name="separatorColor" format="color" />
+        <attr name="numColumns" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleTest">
+        <attr name="circleColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CalculatorLayout">
+        <attr name="separatorSpace" format="dimension" />
+    </declare-styleable>
+</resources>

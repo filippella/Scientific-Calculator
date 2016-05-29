@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/keypadBG"
+    android:orientation="vertical">
+
+    <org.dalol.scientificcalculator.mvc.view.custom.widget.LeftDigitFontEditText
+        android:id="@+id/resultDisplay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textfield"
+        android:inputType="number"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <org.dalol.scientificcalculator.mvc.view.custom.widget.RightDigitFontEditText
+        android:id="@+id/resultDisplay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textfield"
+        android:inputType="number"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/deg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DEG"
+            android:background="@drawable/rbtn_selector"
+            android:textColor="@drawable/rbtn_textcolor_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:minWidth="72dp"
+            android:padding="5dp"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rbtn_selector"
+            android:textColor="@drawable/rbtn_textcolor_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:minWidth="72dp"
+            android:padding="5dp"
+            android:text="RAD" />
+
+        <RadioButton
+            android:id="@+id/gra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GRA"
+            android:background="@drawable/rbtn_selector"
+            android:textColor="@drawable/rbtn_textcolor_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:minWidth="72dp"
+            android:padding="5dp" />
+    </RadioGroup>
+
+    <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/calcScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <org.dalol.scientificcalculator.mvc.view.custom.CalculatorLayout
+            android:id="@+id/calculator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:separatorSpace="2dp" />
+
+    </ScrollView>
+</LinearLayout>
